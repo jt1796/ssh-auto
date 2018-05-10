@@ -9,3 +9,6 @@ Vagrant, ansible
 2. Observe that you cannot ssh into one of them: `ssh demo@192.168.73.1`
 3. Run ansible stuff `ANSIBLE_HOST_KEY_CHECKING=False ANSIBLE_HOSTS=hosts ansible-playbook ssh_add.yml`
 4. Observe that you can now ssh into one of them: `ssh demo@192.168.73.1`
+
+# Troubleshooting
+You may have issues with iptables/firewall. Disable if needed. 
