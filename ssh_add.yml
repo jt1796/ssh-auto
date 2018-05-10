@@ -1,0 +1,10 @@
+---
+- name: Give user ssh access
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Add ssh keys
+    file:
+      path: /tmp/hello
+      state: touch
