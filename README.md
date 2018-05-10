@@ -14,4 +14,4 @@ Ansible, vagrant, virtualbox
 In the ssh_add playbook file, there is a variable for the list of usernames. Ansible knows about the machines because of the hosts file. There is a task to create a user account for each of these usernames on each machine. And another task to add their key so that they can ssh in. The keys are stored here, ansible only needs the public one. The private one is checked into the repo so that you test it out.
 
 # Troubleshooting
-You may have issues with iptables/firewall. Disable if needed. May need to clear your `known_hosts` file.
+You may have issues with iptables/firewall. Disable if needed. May need to clear your `known_hosts` file. On my machine while making this, sometimes the ansible provisioner needed a bit more time after vagrant spun up the boxes. Just wait a minute and run again.
